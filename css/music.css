@@ -1,0 +1,270 @@
+
+.color{
+    background-color:black;
+    height:1250px;
+    
+}
+.container{
+    background-image:url("../image/background.png") ;
+    padding-top:10px;
+    background-size:100% 100%;
+    height:100%;
+    position:relative;
+}
+#searchbox{
+    float:right;
+    background-image:url("../image/search_icon.png");
+    background-repeat:no-repeat;
+    float:right;
+    background-position: left;
+    padding-left:21px;
+    height:22px;
+}
+#mm{
+    padding-top:13px;
+    margin-left:26px;
+}
+.tablinks{
+    float:left;
+    width:20%;
+    background-color:#7cb041;
+    color:white;
+    text-align:center;
+    border:1px solid white;
+    height:100%;
+    padding-top:8px;
+    box-shadow:2px 2px 3px;
+}
+.tablinks:hover{
+    text-decoration:none;
+    color:white;
+    background-color:#237793;
+}
+.active{
+    background-color:#237793 !important;
+}
+.Navigationtab{
+    height:45px;
+    margin-top:16px;
+}
+#row2{
+    margin-top:18px;
+}
+#guitar{
+    float:right;
+}
+.text{
+    white-space:normal;
+    color:white;
+    font-family:"ABeeZee-Regular";
+}
+#TTT{
+    margin-bottom:0px;
+    color:white;
+    display:block;
+        font-family: "ABeeZee-Regular";
+    font-size:35px;
+
+
+}
+
+@font-face {
+    font-family: "ABeeZee-Regular";
+    src: url("./fonts/ABeeZee-Regular");
+}
+
+#MMM{
+    
+        font-family: "ABeeZee-Regular";
+
+    color:white;
+    
+    font-size:45px;
+    white-space:normal;
+    line-height:5px;
+}
+#footer{
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:160px;
+    border-top:2px solid;
+    border-image-source:linear-Gradient(to right,black,white,black);
+    border-image-slice: 1;
+}
+#Eula{
+    text-align:right;
+    font-size:11px;
+}
+.aaa{
+ color:#1ab1c4;
+}
+.aaa:hover{
+    text-decoration:none;
+    color:#1ab1c4;
+}
+.E2{
+    color:white;
+}
+#element1{
+    position:relative;
+}
+#ee1{
+    text-align:center;
+}
+#copy{
+    color:white;
+    vertical-align:bottom;
+    font-size:13px;
+    padding-left:9px;
+}
+#gim{
+    display:flex;
+    justify-content: center;
+    overflow:hidden;
+}
+#last{
+    width:265px;
+    height:30px;
+    margin:auto;
+    border-top:1px solid white;
+    box-shadow:0px -7px 6px -6px white;
+}
+.facebook{
+    position:relative;
+    top:18px;
+}
+.facebook:hover{
+    top:3px;
+    transition:top 1s ease-in-out;
+}
+/*page 2*/
+.tab{
+    width:100%;
+    height:31px;
+    margin-top:12px;
+}
+#grid{
+    float:right;
+    width:74px;
+    color:white;
+    background-color:#7cb041;
+    border:1px solid white;
+    box-shadow:2px 2px 2px
+    
+}
+#gallery{
+    float:right;
+    width:74px;
+    color:white;
+    background-color:#7cb041;
+    border:1px solid white;
+    box-shadow:2px 2px 2px;
+}
+#grid:hover{
+    background-color:#237793;
+}
+#gallery:hover{
+    background-color:#237793;
+}
+#grid1{
+    display:block;
+    margin-top:33px;
+}
+#gallery1{
+    display:none;
+}
+.imges{
+    float:left;
+    width:100%;
+    height:100%;
+    padding-bottom:29px;
+}
+.modal{
+    position:absolute;
+    width:1030px;
+    height:731px;
+    margin-top:299px;
+    margin-left:47px;
+    z-index:1;
+}
+.modal-content{
+    height:100%;
+    width:100%;
+    padding:10px;
+    background-color: #151314;
+
+}
+#img01{
+    height:75%;
+    width:100%;
+}
+#caption{
+    height:25%;
+    padding-top:14px;
+    background-color:#151314;
+    color:white;
+}
+.pic{
+    white-space:normal;
+}
+.close{
+    position:relative;
+    color:white;
+    border:1px solid white;
+    border-radius:50%;
+    height:21px;
+    width:21px;
+    opacity:1 !important;
+    font-weight: 400 !important;
+    font-size:16px;
+    background-color:#151314;
+    display:none;
+    bottom:537px;
+    right:45px;
+    z-index:1093;
+   
+}
+.close:hover{
+    color:white;
+    cursor:pointer !important;
+    opacity:1 !important;
+    font-weight: 400 !important;
+}
+.close_cross{
+    position:absolute;
+    top:1px;
+    left:5px;
+}
+
+
+
+
+
+@media only screen and (max-width:1024px){
+    #mm{
+        margin-left:0px;
+    }
+    #Eula{
+        font-size:9px
+    }
+    #copy{
+        font-size:11px;
+    }
+    #grid{
+        width:60px;
+    }
+    #gallery{
+        width:60px;
+    }
+    .modal{
+        width:627px;
+        height:732px;
+        margin-top:278px;
+    }
+    .close{
+        bottom:356px;
+        right:25px;
+    }
+}
+
