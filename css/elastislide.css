@@ -18,11 +18,13 @@
 }
 .es-carousel ul{
 	display:none;
+	width:1282px;
 }
 .es-carousel ul li{
 	height:100%;
 	float:left;
 	display:block;
+	width:103px !important;
 }
 .es-carousel ul li a{
 	display:block;

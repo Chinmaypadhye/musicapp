@@ -42,14 +42,60 @@ $(document).ready(() => {
         $(".modal").css("display","block");
        // var src=$(this).find("img").attr("src");
         $(".close").css("display","block");
+    
+
 
         
 
         $("#img01").attr("src",this.src);
 
     })
-    //  $(document).on('click','#gallery',() =>{
-    //     $("#gallery1").css("display","block")
-    //     $("#grid1").css("display","none")
-    //  })
+    /*$(".Accordian").click(function(){
+        $(this).toggleClass("main");
+        var r=$(this).next();
+        if($(r).css("display")=="block"){
+            $(r).css("display","none")
+        }else{
+            $(r).css("display","block")
+        }
+       
+       })*/
+     /* $("#popup").click(()=>{
+        
+        if($("#pope").css("display")=="block"){
+            $("#pope").css("display","none")
+        }else{
+            $("#pope").css("display","block")
+        }
+       })*/
+        $(".pop").hover(function(){
+           
+           let id=`#pope_${this.id}`
+          // ele.slideDown(); 
+           
+           //let id=`#pope_${this.id}`;
+           
+           $(id).slideDown("0.5s","linear")
+       },function(){
+        let id=`#pope_${this.id}`;
+           
+           $(id).slideUp("0.9s","linear");
+       });
+      /* $("#popup").hover(function(){
+           
+        $(".pope").slideDown("0.5s","linear")
+    },function(){
+        
+        $(".pope").slideUp("0.9s","linear");
+    })*/
+
+   
+    // $(".collapse").collapse();
+    
+    
+    
+
 });
+
+
+

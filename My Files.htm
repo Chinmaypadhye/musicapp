@@ -1,80 +1,481 @@
 <!doctype html>
 <html>
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width:device-width,scale:1">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/music.css">
-   
-    <script src="./js/music2.js"></script>
-     </head>
-    <body>
-    <div class="color">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4" id="ad">
-                <img  class="img-fluid" id="mus"src="./image/mus.jpg">
-                </div>
-                <div class="col-sm-4">
-                <img  class="img-fluid" id="mm"  src="./image/Music-logo.png">
-                </div>
-                <div class="col-sm-4">
-                    <input  id="searchbox" type:text placeholder="search...">
-                </div>
-                
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width:device-width,scale:1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/music.css">
+  <script src="./js/jquery.js"></script>
+  <script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/music2.js"></script>
+ </head>
+ <body>
+  <div class="color">
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-4" id="ad">
+        <img  class="img-fluid" id="mus"src="./image/mus.jpg">
+      </div>
+      <div class="col-sm-4">
+       <img  class="img-fluid" id="mm"  src="./image/Music-logo.png">
+      </div>
+      <div class="col-sm-4">
+       <input  id="searchbox" type:text placeholder="search...">
+      </div>
+    </div>
+    <div class="Navigationtab">
+     <a class="tablinks" href="./About me.htm" target:_self>About me</a>
+     <a class="tablinks" href="./My Pictures.htm" target:_self>My pictures</a>
+     <a class="tablinks" href="./My Music.htm" target:_self>My Music</a>
+     <a class="tablinks active" href="./My Files.htm" target:_self>My files</a>
+     <a class="tablinks" href="./My Videos.htm" target:_self>My Videos</a>
+    </div>
+    <div class="file">
+     <div id="accordion">
+      <div class="card">
+       <div class="card-header" id="headingOne">
+        <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         Documents
+        </button>
+       </div>
+       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+         <div class="doc">
+          <div id="panel1">
+           <div class="icon">
+            <img src="./image/folder.png" id="icon">
+           </div>
+           <div class="data">
+            <p id="pp">My document name.doc</p>
+            <p id="size">(240 kb)</p>
+            <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+           </div>
+           <div class="popup">
+            <a href="#" class="pop" id="1"><img src="./image/pop.png"></a>
+            <div class="pope" id="pope_1">
+             <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
             </div>
-            
-            <div class="Navigationtab">
-                <a class="tablinks" href="./About me.htm" target:_self>About me</a>
-                <a class="tablinks" href="./My Pictures.htm" target:_self>My pictures</a>
-                <a class="tablinks" href="./My Music.htm" target:_self>My Music</a>
-                <a class="tablinks active" href="./My Files.htm" target:_self>My files</a>
-                <a class="tablinks" href="./My Videos.htm" target:_self>My Videos</a>
+           </div>
+          </div>
+          <div id="ppp">
+           <div id="pluss">
+            <div id="plus">
+             <img src="./image/increase.png">
             </div>
-            <footer id="footer">
-                
-
-                <div id="Eula">
-                    
-                    <span><span class="E1"><a class="aaa" href="#">EULA</a></span>
-                     <span class="E2"> |</span>
-                     <span class="E1"><a class="aaa" href="#"> Terms of service</a></span>
-                     <span class="E2"> |</span>
-                     <span class="E1"><a class="aaa" href="#"> privacy policy</a></span></span>
-
+            <div id="shadow">
+            </div>
+          </div>
+          <div id="plusd1">
+           <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+          </div>  
+         </div>  
+        </div>
+         <div class="doc">
+          <div id="panel1">
+           <div class="icon">
+            <img src="./image/folder.png" id="icon">
+           </div>
+           <div class="data">
+            <p id="pp">My document name.doc</p>
+            <p id="size">(240 kb)</p>
+            <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+           </div>
+           <div class="popup">
+            <a href="#" class="pop" id="2"><img src="./image/pop.png"></a>
+            <div class="pope" id="pope_2" >
+             <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
+            </div>
+           </div>
+          </div>
+          <div id="ppp">
+           <div id="pluss">
+            <div id="plus">
+             <img src="./image/increase.png">
+            </div>
+            <div id="shadow">
+            </div>
+           </div>
+           <div id="plusd1">
+            <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+           </div>  
+          </div>
+        </div>
+          <div class="doc">
+              <div id="panel1">
+               <div class="icon">
+                <img src="./image/folder.png" id="icon">
+               </div>
+               <div class="data">
+                <p id="pp">My document name.doc</p>
+                <p id="size">(240 kb)</p>
+                <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+               </div>
+               <div class="popup">
+                <a href="#" class="pop" id="3"><img src="./image/pop.png"></a>
+                <div class="pope" id="pope_3">
+                 <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
                 </div>
-              <div id="element1">
-                <div id="ee1">
-                      <img id="untitled" src="./image/Untitled-4.png">
-                       <span id="copy"> Copyright © 2012 My Website.All right reserved</span>
+               </div>
+              </div>
+              <div id="ppp">
+               <div id="pluss">
+                <div id="plus">
+                 <img src="./image/increase.png">
+                </div>
+                <div id="shadow">
+                </div>
+              </div>
+              <div id="plusd1">
+               <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+              </div>  
+             </div>  
+            </div>
+         </div>
+        </div>
+       
+       </div>
+      <div class="card">
+       <div class="card-header" id="headingTwo">
+        <button id="btn2" class="btn  collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Presentations
+        </button>
+       </div>
+       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+            <div class="doc">
+                <div id="panel1">
+                 <div class="icon">
+                  <img src="./image/pptx.png" id="icon">
+                 </div>
+                 <div class="data">
+                  <p id="pp">My document name.doc</p>
+                  <p id="size">(240 kb)</p>
+                  <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+                 </div>
+                 <div class="popup">
+                  <a href="#" class="pop" id="11"><img src="./image/pop.png"></a>
+                  <div class="pope" id="pope_11">
+                   <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
                   </div>
-
-                  
+                 </div>
+                </div>
+                <div id="ppp">
+                 <div id="pluss">
+                  <div id="plus">
+                   <img src="./image/increase.png">
+                  </div>
+                  <div id="shadow">
+                  </div>
+                </div>
+                <div id="plusd1">
+                 <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+                </div>  
+               </div>  
               </div>
-              <div id="gim">
-                  <div id="gm">
-                      <img class="facebook" src="./image/blogger_icon.png">
-                      <img class="facebook" src="./image/facebook.png">
-                      <img class="facebook" src="./image/digg-logo.png">
-                      <img class="facebook" src="./image/linkedin_icon.png">
-                      <img class="facebook" src="./image/stumbleupon_logo.png">
-                      <img class="facebook" src="./image/twitter-icon.png">
+              <div class="doc">
+                  <div id="panel1">
+                   <div class="icon">
+                    <img src="./image/pptx.png" id="icon">
                    </div>
-              </div>
-              <div id="last">
-
-              </div>
-                  </footer>
-          
-            
-                
-                
-            
-                
-
-                
-            
+                   <div class="data">
+                    <p id="pp">My document name.doc</p>
+                    <p id="size">(240 kb)</p>
+                    <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+                   </div>
+                   <div class="popup">
+                    <a href="#" class="pop" id="12"><img src="./image/pop.png"></a>
+                    <div class="pope" id="pope_12">
+                     <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
+                    </div>
+                   </div>
+                  </div>
+                  <div id="ppp">
+                   <div id="pluss">
+                    <div id="plus">
+                     <img src="./image/increase.png">
+                    </div>
+                    <div id="shadow">
+                    </div>
+                  </div>
+                  <div id="plusd1">
+                   <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+                  </div>  
+                 </div>  
+                </div>
+                <div class="doc">
+                    <div id="panel1">
+                     <div class="icon">
+                      <img src="./image/pptx.png" id="icon">
+                     </div>
+                     <div class="data">
+                      <p id="pp">My document name.doc</p>
+                      <p id="size">(240 kb)</p>
+                      <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+                     </div>
+                     <div class="popup">
+                      <a href="#" class="pop" id="13"><img src="./image/pop.png"></a>
+                      <div class="pope" id="pope_13">
+                       <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
+                      </div>
+                     </div>
+                    </div>
+                    <div id="ppp">
+                     <div id="pluss">
+                      <div id="plus">
+                       <img src="./image/increase.png">
+                      </div>
+                      <div id="shadow">
+                      </div>
+                    </div>
+                    <div id="plusd1">
+                     <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+                    </div>  
+                   </div>  
+                  </div>
         </div>
+       </div>
+      </div>
+      <div class="card">
+       <div class="card-header" id="headingThree">
+        <button id="btn3" class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Spreadsheets
+        </button>
+       </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+       <div class="card-body">
+          <div class="doc">
+              <div id="panel1">
+               <div class="icon">
+                <img src="./image/excel.png" id="icon">
+               </div>
+               <div class="data">
+                <p id="pp">My document name.doc</p>
+                <p id="size">(240 kb)</p>
+                <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+               </div>
+               <div class="popup">
+                <a href="#" class="pop" id="21"><img src="./image/pop.png"></a>
+                <div class="pope" id="pope_21">
+                 <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
+                </div>
+               </div>
+              </div>
+              <div id="ppp">
+               <div id="pluss">
+                <div id="plus">
+                 <img src="./image/excel.png">
+                </div>
+                <div id="shadow">
+                </div>
+              </div>
+              <div id="plusd1">
+               <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+              </div>  
+             </div>  
+            </div>
+            <div class="doc">
+                <div id="panel1">
+                 <div class="icon">
+                  <img src="./image/excel.png" id="icon">
+                 </div>
+                 <div class="data">
+                  <p id="pp">My document name.doc</p>
+                  <p id="size">(240 kb)</p>
+                  <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+                 </div>
+                 <div class="popup">
+                  <a href="#" class="pop" id="22"><img src="./image/pop.png"></a>
+                  <div class="pope" id="pope_22">
+                   <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
+                  </div>
+                 </div>
+                </div>
+                <div id="ppp">
+                 <div id="pluss">
+                  <div id="plus">
+                   <img src="./image/increase.png">
+                  </div>
+                  <div id="shadow">
+                  </div>
+                </div>
+                <div id="plusd1">
+                 <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+                </div>  
+               </div>  
+              </div>
+              <div class="doc">
+                  <div id="panel1">
+                   <div class="icon">
+                    <img src="./image/excel.png" id="icon">
+                   </div>
+                   <div class="data">
+                    <p id="pp">My document name.doc</p>
+                    <p id="size">(240 kb)</p>
+                    <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+                   </div>
+                   <div class="popup">
+                    <a href="#" class="pop" id="23"><img src="./image/pop.png"></a>
+                    <div class="pope" id="pope_23">
+                     <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
+                    </div>
+                   </div>
+                  </div>
+                  <div id="ppp">
+                   <div id="pluss">
+                    <div id="plus">
+                     <img src="./image/increase.png">
+                    </div>
+                    <div id="shadow">
+                    </div>
+                  </div>
+                  <div id="plusd1">
+                   <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+                  </div>  
+                 </div>  
+                </div>
+
+
+            </div>
+      </div>
+     </div>
+      <div class="card">
+       <div class="card-header" id="headingFour">
+        <button id="btn4" class="btn  collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+         PDF's
+        </button>
+       </div>
+       <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+        <div class="card-body">
+            <div class="doc">
+                <div id="panel1">
+                 <div class="icon">
+                  <img src="./image/pdf_1.png" id="icon">
+                 </div>
+                 <div class="data">
+                  <p id="pp">My document name.doc</p>
+                  <p id="size">(240 kb)</p>
+                  <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+                 </div>
+                 <div class="popup">
+                  <a href="#" class="pop" id="31"><img src="./image/pop.png"></a>
+                  <div class="pope" id="pope_31">
+                   <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
+                  </div>
+                 </div>
+                </div>
+                <div id="ppp">
+                 <div id="pluss">
+                  <div id="plus">
+                   <img src="./image/increase.png">
+                  </div>
+                  <div id="shadow">
+                  </div>
+                </div>
+                <div id="plusd1">
+                 <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+                </div>  
+               </div>  
+              </div>
+              <div class="doc">
+                  <div id="panel1">
+                   <div class="icon">
+                    <img src="./image/pdf_1.png" id="icon">
+                   </div>
+                   <div class="data">
+                    <p id="pp">My document name.doc</p>
+                    <p id="size">(240 kb)</p>
+                    <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+                   </div>
+                   <div class="popup">
+                    <a href="#" class="pop" id="32"><img src="./image/pop.png"></a>
+                    <div class="pope" id="pope_32">
+                     <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
+                    </div>
+                   </div>
+                  </div>
+                  <div id="ppp">
+                   <div id="pluss">
+                    <div id="plus">
+                     <img src="./image/increase.png">
+                    </div>
+                    <div id="shadow">
+                    </div>
+                  </div>
+                  <div id="plusd1">
+                   <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+                  </div>  
+                 </div>  
+                </div>
+                <div class="doc">
+                    <div id="panel1">
+                     <div class="icon">
+                      <img src="./image/pdf_1.png" id="icon">
+                     </div>
+                     <div class="data">
+                      <p id="pp">My document name.doc</p>
+                      <p id="size">(240 kb)</p>
+                      <p id="pp">uploaded 08/04/2019 at 4.30pm</p>
+                     </div>
+                     <div class="popup">
+                      <a href="#" class="pop" id="33"><img src="./image/pop.png"></a>
+                      <div class="pope" id="pope_33">
+                       <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting</p>
+                      </div>
+                     </div>
+                    </div>
+                    <div id="ppp">
+                     <div id="pluss">
+                      <div id="plus">
+                       <img src="./image/increase.png">
+                      </div>
+                      <div id="shadow">
+                      </div>
+                    </div>
+                    <div id="plusd1">
+                     <p>An icon (from Greek eikwv eikon "image") is a religious work of art most commonly a painting from Eastern Christanity and in certain Eastern Catholic churches.More broadly the items.</p>
+                    </div>  
+                   </div>  
+                  </div>
+  
         </div>
-    </body>
+       </div>
+      </div> 
+     </div>
+    </div>
+  
+    <footer id="footer">
+     <div id="Eula">
+      <span><span class="E1"><a class="aaa" href="#">EULA</a></span>
+      <span class="E2"> |</span>
+      <span class="E1"><a class="aaa" href="#"> Terms of service</a></span>
+      <span class="E2"> |</span>
+      <span class="E1"><a class="aaa" href="#"> privacy policy</a></span></span>
+     </div>
+     <div id="element1">
+      <div id="ee1">
+       <img id="untitled" src="./image/Untitled-4.png">
+       <span id="copy"> Copyright © 2012 My Website.All right reserved</span>
+      </div>
+     </div>
+     <div id="gim">
+      <div id="gm">
+       <img class="facebook" src="./image/blogger_icon.png">
+       <img class="facebook" src="./image/facebook.png">
+       <img class="facebook" src="./image/digg-logo.png">
+       <img class="facebook" src="./image/linkedin_icon.png">
+       <img class="facebook" src="./image/stumbleupon_logo.png">
+       <img class="facebook" src="./image/twitter-icon.png">
+       </div>
+      </div>
+    <div id="last">
+
+    </div>
+   </footer>
+  
+</div>
+<script>
+  $(".collapse").collapse();
+  </script>
+</body>
 </html>

@@ -55,7 +55,7 @@
 	padding:0 15px;
 	text-transform:uppercase;
 }
-/*.rg-view{
+.rg-view{
 	height:30px;
 }
 .rg-view a{
@@ -70,7 +70,7 @@
 }
 .rg-view a:hover{
 	opacity:1.0;
-}*/
+}
 .rg-view a.rg-view-full{
 	background-position:0px 0px;
 }
