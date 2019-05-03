@@ -1,25 +1,24 @@
 <!doctype html>
 <html>
     <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width:device-width,scale:1">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/music.css">
-   
-    <script src="./js/music2.js"></script>
+      
      </head>
     <body>
     <div class="color">
-        <div class="container">
+        <div class="container main">
             <div class="row">
                 <div class="col-sm-4" id="ad">
-                <img  class="img-fluid" id="mus"src="./image/mus.jpg">
+                <img  class="img-fluid" id="mus" src="./image/mus.jpg">
                 </div>
                 <div class="col-sm-4">
                 <img  class="img-fluid" id="mm"  src="./image/Music-logo.png">
                 </div>
                 <div class="col-sm-4">
-                    <input  id="searchbox" type:text placeholder="search...">
+                    <input  id="searchbox" type="text" placeholder="search...">
                 </div>
                 
             </div>
@@ -31,6 +30,332 @@
                 <a class="tablinks" href="./My Files.htm" target:_self>My files</a>
                 <a class="tablinks" href="./My Videos.htm" target:_self>My Videos</a>
             </div>
+            <div class="tab">
+                <button class="grid audioo active">Grid</button>
+                <button id="List">List</button>
+                <button class="gallery audioo" >Gallery</button>
+            </div>
+            <div class="music-player">
+                <audio id="audd" controls autoplay>
+                    
+
+                </audio>
+                
+            </div>
+            <div class="details">
+                    <div class="imgess">
+                     <img id="imgee">
+                    </div>
+                     <div class="detail_1">
+                       <p id="track"></p>
+                       <p id="artist"></p>
+                       <p id="gener"></p>
+                       <p id="size"></p>
+                       <p id="length"></p>
+                       <div id="Rating"><p>Rating :</p></div>        
+                       <div id="stare">
+                         <img id="10" class="stars">
+                         <img id="11" class="stars">
+                         <img id="12" class="stars">
+                         <img id="13" class="stars">
+                         <img id="14" class="stars">
+                       </div>
+                         
+                     </div>
+                   </div>
+        <div class="grid-2">
+            <div class="row muss">
+                <div class="col-sm-3 space" ><img src="./image/msc_1.jpg" class="msc bor" abbr title="01 Deewani Mastani -  Bajirao Mastani (Shreya Ghoshal)" id="1" data-track="Track : track1" data-artist="Artist : Shreya Ghoshal" data-Gener="Gener : Bollywood" data-size="Size : 13.1 MB" data-length="Length : 5:40" data-rate="5"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_2.jpg" class="msc bor" abbr title="03 - Zingaat (Akhil Tapori Mix) - DJ Akhil Talreja (SongsMp3.Com)" id="2" data-track="Track : track2" data-artist="Artist : Akhil Talreja" data-Gener="Gener : Songs.Mp3.Co" data-size="Size : 3.75 MB" data-length="Length : 3:26" data-rate="4"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_3.jpg" class="msc bor" abbr title="03 Khalibali - Padmaavat" id="3" data-track="Track : track3" data-artist="Artist : Shivam Phatak" data-Gener="Gener : Bollywood" data-size="Size : 10 MB" data-length="Length : 4:19" data-rate="5"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_4.jpg" class="msc bor" abbr title="03 Malhari (Bajirao Mastani)" id="4" data-track="Track : track4" data-artist="Artist : Vishal Dadlani" data-Gener="Gener : Bollywood" data-size="Size : 8.53 MB" data-length="Length : 4:04" data-rate="3"></div>
+            
+            
+                <div class="col-sm-3 space"><img src="./image/msc_5.jpg" class="msc bor" abbr title="ABCD_(Bestwap.in)" id="5" data-track="Track : track5" data-artist="Artist : yo yo honey singh" data-Gener="Gener : Bollywood" data-size="Size : 3.25 MB" data-length="Length : 3:27" data-rate="5" ></div>
+                <div class="col-sm-3 space"><img src="./image/msc_6.jpg" class="msc bor" abbr title="Cabello_ft_Young_Thug_-_Havana (1)" id="6" data-track="Track : track6" data-artist="Artist : Camila Cabello" data-Gener="Gener : Rock" data-size="Size : 2.28 MB" data-length="Length : 3:38" data-rate="4"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_7.jpg" class="msc bor" abbr title="Champion - Dwayne DJ Bravo" id="7" data-track="Track : track7" data-artist="Artist : Dwyane" data-Gener="Gener : Rock" data-size="Size : 5.82 MB" data-length="Length : 2:29" data-rate="3"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_8.jpg" class="msc bor" abbr title="Cheap Thrills (feat. Sean Paul) (Mp3Beet.Com) - 320Kbps" id="8" data-track="Track : track8" data-artist="Artist : Sia Furler" data-Gener="Gener : Rock" data-size="Size : 8.98 MB" data-length="Length : 3:44" data-rate="5"></div>
+            
+            
+                <div class="col-sm-3 space"><img src="./image/msc_9.jpg" class="msc bor" abbr title="Demi-Lovato-Clean-Bandit-Solo" id="9" data-track="Track : track9" data-artist="Artist : Clean_bandit" data-Gener="Gener : Rock" data-size="Size : 5.10 MB" data-length="Length : 3:42" data-rate="4"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_a.jpg" class="msc bor" abbr title="Ed Sheeran - Shape of You - MP3 320" id="a" data-track="Track : track10" data-artist="Artist : Ed Sheeran" data-Gener="Gener :Rock" data-size="Size : 9.07 MB" data-length="Length : 3:53" data-rate="5"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_b.jpg" class="msc bor" abbr title="Jau De Na Va(VipMarathi.Com)" id="b" data-track="Track : track11" data-artist="Artist : Jayas Kumar" data-Gener="Gener : old days" data-size="Size : 4.69 MB" data-length="Length : 5:02" data-rate="4"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_c.jpg" class="msc bor" abbr title="Right Now (Na Na Na) - Akon(MyMp3Song)" id="c" data-track="Track : track12" data-artist="Artist : Akon" data-Gener="Gener : Rock" data-size="Size : 3.76 MB" data-length="Length : 4:06" data-rate="3"></div>
+            
+            
+                <div class="col-sm-3 space"><img src="./image/msc_d.jpg" class="msc bor" abbr title="Smack That - Akon(MyMp3Song)" id="d" data-track="Track : track13" data-artist="Artist : Akon" data-Gener="Gener : Rock" data-size="Size : 3.85 MB" data-length="Length : 4:12 " data-rate="2"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_e.jpg" class="msc bor" abbr title="Sukhakarta Dukhaharta Ganesh Aarti - Anuradha Paudwal" id="e" data-track="Track : track14" data-artist="Anuradha Paudwal" data-Gener="Gener : Bhajan" data-size="Size : 2.47 MB" data-length="Length : 2:28" data-rate="3"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_f.jpg" class="msc bor" abbr title="I wanna love you - Akon" id="f" data-track="Track : track15" data-artist="Akon" data-Gener="Gener : Rock " data-size="Size : 5.02 MB" data-length="Length : 4:23" data-rate="4"></div>
+                <div class="col-sm-3 space"><img src="./image/msc_g.jpg" class="msc bor" abbr title="02 Sun Saathiya - ABCD 2" id="g" data-track="Track : track16" data-artist="Artist : Divya Kumar" data-Gener="Gener : Rock" data-size="Size : 8.44 MB" data-length="Length : 3:37" data-rate="2"></div>
+            
+
+           
+        </div>
+    </div>
+        <div class="gallery1">
+
+        </div>
+        <div class="list1">
+            <div class="liste">
+                <audio id="song" src="" controls autoplay></audio>
+            </div>
+            <div class="tabmain">
+            <table class="musssics">
+               <tr>
+                   <td class="opp" scope="col">No.</td>
+                   <td class="opp" scope="col">Status</td>
+                   <td class="opp" scope="col">Song Name</td>
+                   <td class="opp" scope="col">Artist</td>
+                   <td class="opp" scope="col">Gener</td>
+                   <td class="opp" scope="col">Length</td>
+                   <td class="opp" scope="col">Size</td>
+                   <td class="opp" scope="col">Rating</td>
+               </tr> 
+               <tr class="sung" id="1">
+                   <td scope="row">1</td>
+                   <td class="opp status">Play</td>
+                   <td class="opp">Deewani Mastani</td>
+                   <td class="opp">Shreya Ghoshal</td>
+                   <td class="opp">Bollywood</td>
+                   <td class="opp">5:40</td>
+                   <td class="opp">13.1 MB</td>
+                   <td>
+                       <img class="stars" src="./image/star.png">
+                       <img class="stars" src="./image/star.png">
+                       <img class="stars" src="./image/star.png">
+                       <img class="stars" src="./image/star.png">
+                       <img class="stars" src="./image/star.png">
+                   </td>
+               </tr>
+            <tr class="sung" id="2">
+                <td class="opp" scope="row">2</td>
+                <td class="opp status" >Play</td>
+                <td class="opp">Zing Zing Zinghaat</td>
+                <td class="opp">Akhil Talreja</td>
+                <td class="opp">Songs.Mp3.Co</td>
+                <td class="opp">3:26</td>
+                <td class="opp">3.75 MB</td>
+                <td>
+                    <img class="stars" src="./image/star.png">
+                    <img class="stars" src="./image/star.png">
+                    <img class="stars" src="./image/star.png">
+                    <img class="stars" src="./image/star.png">
+                </td>
+             </tr>
+                <tr class="sung" id="3">
+                    <td class="opp" scope="row">3</td>
+                    <td class="opp status" >Play</td>
+                    <td class="opp">Khalibali</td>
+                    <td class="opp">Shivam Phatak</td>
+                    <td class="opp">Bollywood</td>
+                    <td class="opp">4:19</td>
+                    <td class="opp">10 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="4">
+                    <td class="opp" scope="row">4</td>
+                    <td class="opp status">Play</td>
+                    <td class="opp">Malhari</td>
+                    <td class="opp">Vishal Dadlani</td>
+                    <td class="opp">Bollywood</td>
+                    <td class="opp">4:04</td>
+                    <td class="opp">8.53 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="5" >
+                    <td class="opp" scope="row">5</td>
+                    <td class="opp status" >Play</td>
+                    <td class="opp">Yaaryan</td>
+                    <td class="opp">Honey Singh</td>
+                    <td class="opp">Bollywood</td>
+                    <td class="opp">3:27</td>
+                    <td class="opp">3:25 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="6">
+                    <td class="opp" scope="row">6</td>
+                    <td class="opp status">Play</td>
+                    <td class="opp">Cabello_ft_Young_Thug_-_Havana</td>
+                    <td class="opp">Camila Cabello</td>
+                    <td class="opp">Rock</td>
+                    <td class="opp">3:38</td>
+                    <td class="opp">2.28 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                 <tr class="sung" id="7">
+                    <td class="opp" scope="row">7</td>
+                    <td class="opp status" >Play</td>
+                    <td class="opp">Champion</td>
+                    <td class="opp">Dwyane Bravo</td>
+                    <td class="opp">Bollywood</td>
+                    <td class="opp">2:28</td>
+                    <td class="opp">5.82 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="8">
+                    <td class="opp" scope="row">8</td>
+                    <td class="opp status" >Play</td>
+                    <td class="opp">Cheap Thrills</td>
+                    <td class="opp">Sean Paul</td>
+                    <td class="opp">Rock</td>
+                    <td class="opp">3:44</td>
+                    <td class="opp">8.98 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+
+                <tr class="sung" id="9">
+                    <td class="opp">9</td>
+                    <td class="opp status" scope="row" >Play</td>
+                    <td class="opp">Demi-Lovato-Clean-Bandit-Solo</td>
+                    <td class="opp">Clean Bandit</td>
+                    <td class="opp">Rock</td>
+                    <td class="opp">3:42</td>
+                    <td class="opp">5.10 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="a" >
+                    <td class="opp" scope="row">10</td>
+                    <td class="opp status" >Play</td>
+                    <td class="opp">I am in love in Shape of you</td>
+                    <td class="opp">Sheeran</td>
+                    <td class="opp">Rock</td>
+                    <td class="opp">3:53</td>
+                    <td class="opp">9.07 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="b">
+                    <td class="opp" scope="row">11</td>
+                    <td class="opp status">Play</td>
+                    <td class="opp">Jau de na va</td>
+                    <td class="opp">Jayas Kumar</td>
+                    <td class="opp">Marathi</td>
+                    <td class="opp">5:02</td>
+                    <td class="opp">4.69 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                
+                <tr class="sung" id="c">
+                    <td class="opp" scope="row">12</td>
+                    <td class="opp status">Play</td>
+                    <td class="opp">Right now na na</td>
+                    <td class="opp">Akon</td>
+                    <td class="opp">Rock</td>
+                    <td class="opp">4:06</td>
+                    <td class="opp">3.76 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="d">
+                    <td class="opp" scope="row">13</td>
+                    <td class="opp status" >Play</td>
+                    <td class="opp">Smack that all on the floor</td>
+                    <td class="opp">Akon</td>
+                    <td class="opp">Rock</td>
+                    <td class="opp">4:12</td>
+                    <td class="opp">3.85 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="e">
+                    <td class="opp" scope="row">14</td>
+                    <td class="opp status" >Play</td>
+                    <td class="opp">Sukhkarta Dukhkarta</td>
+                    <td class="opp">Paudwal</td>
+                    <td class="opp">Bhajan</td>
+                    <td class="opp">2:28</td>
+                    <td class="opp">2.47 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="f">
+                    <td class="opp" scope="row">15</td>
+                    <td class="opp status">Play</td>
+                    <td class="opp">I wanna love you</td>
+                    <td class="opp">Akon</td>
+                    <td class="opp">Rock</td>
+                    <td class="opp">4:23</td>
+                    <td class="opp">5:02 MB</td>
+                    <td>
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+                <tr class="sung" id="g">
+                    <td class="opp" scope="row">16</td>
+                    <td class="opp status" >Play</td>
+                    <td class="opp">Sun Saathiya Mahiya banjaye</td>
+                    <td class="opp">Divya Kumar</td>
+                    <td class="opp">Bollywood</td>
+                    <td class="opp">3:37</td>
+                    <td class="opp">8.44 MB</td>
+                    <td >
+                        <img class="stars" src="./image/star.png">
+                        <img class="stars" src="./image/star.png">
+                    </td>
+                </tr>
+             </table>
+             </div>
+
+        
+        </div>
+   
             <footer id="footer">
                 
 
@@ -68,5 +393,7 @@
            
         </div>
         </div>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/music2.js"></script>
     </body>
 </html>
