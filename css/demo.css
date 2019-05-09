@@ -1,85 +1,150 @@
-@import url('reset.css');
+/*
+* Base Template
+* Combines HTML5 Boilerplate & Boostrap. Includes some basic templating.
+* Authored by Stephen Shaw (shshaw@gmail.com)
+*/
 
-/* General Codrops Demo Style */
-body{
-	background:#1F1F1F url(../images/pattern.png) repeat top left;
-	color:#fff;
-	font-family: 'PT Sans Narrow', Arial, sans-serif;
-	font-size:14px;
+/* @group Basics */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
-a{
-	color:#ddd;
-	text-decoration:none;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-a:hover{
-	color:#00c6e3;
+
+body {
+  color: #333333;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  margin: 0;
+  padding: 0px;
 }
-p.sub{
-	padding:25px 10px 10px 10px;
-	text-align:left;
-	color:#aaa;
+
+a {
+  color: #da0d25;
+  text-decoration: none;
 }
-.clr{
-	clear:both;
+a:hover,
+a:focus {
+  color: #f22840;
+  text-decoration: none;
 }
-h1{
-	margin:5px;
-	font-size:24px;
-	text-align:center;
-	color:#fff;
-	font-family:"Pacifico", Georgia, "Times New Roman", serif;
-	text-shadow:1px 1px 1px #000;
-	padding-bottom:10px;
-	line-height:40px;
+p { margin: 0 0 20px; }
+
+h1,
+h2,{
+  margin: 10px 0;
+  font-weight: 500;
+  line-height: 40px;
+  color: inherit;
+  text-align: center;
 }
-h1 span{
-	font-size:10px;
-	display:block;
-	letter-spacing:2px;
-	font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
-	color:#00c6e3;
-	line-height:14px;
-	padding-top:10px;
-	text-shadow:none;
-	text-transform:uppercase;
+h1 small,
+h2 small {
+  font-weight: 400;
+  line-height: 1;
+  color: #8d8d8d;
 }
-/* Header Style */
-.header{
-	font-size:13px;
-	background:#000;
-	opacity:0.9;
-	text-transform:uppercase;
-	-moz-box-shadow: 1px 0px 2px #000;
-	-webkit-box-shadow: 1px 0px 2px #000;
-	box-shadow: 1px 0px 2px #000;
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+
+/* @end */
+
+.main-header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  background: #eee;
+  padding: 1em;
 }
-.header a{
-	line-height:18px;
-	padding:0 4px;
-	letter-spacing:1px;
-	text-shadow:1px 1px 1px #000;
-	color:#ddd;
+
+.main-header__nav {
+  border-top: solid 1px #ccc;
+  margin: 1em -1em;
 }
-.header a:hover{
-	color:#fff;
+
+.main-header__nav a {
+  display: block;
+  padding: 0.5em 1em;
+  border-bottom: solid 1px #ddd;
 }
-.header a span{
-	font-weight:bold;
+
+.main-header__nav a:hover,
+.main-header__nav a:focus {
+  color: #eee;
+  background: #da0d25;
 }
-.header span.right_ab{
-	float:right;
+
+@media (max-width: 800px) {
+  body { padding: 0; }
+
+  .main-header {
+    position: relative;
+    width: 100%;
+  }
+
+  .main-header__nav a { display: inline-block; border: none; }
 }
-.content{
-	margin:0px 25px 30px 25px;
+
+.intro {
+  padding: 4em 2em;
 }
-@media screen and (max-width: 640px) {
-	.header a{
-		display:block;
-		text-align:center;
-		font-size:10px;
-		text-shadow:none;
-	}
-	.header span.right_ab{
-		float:none;
-	}
+
+.demo {
+  padding: 6em 2em;
+}
+
+.demo h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 1em;
+}
+
+.demo .flipster {
+  padding: 5px;
+}
+
+
+.code {
+  display: block;
+  background: #eee;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 2em auto;
+  max-width: 30em;
+  font-size: 0.8em;
+  width: fit-content;
+  white-space: pre-wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0;
+  background-color: #da0d25;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-shadow: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0;
+  transition: all 300ms ease;
+}
+
+.button:hover,
+.button:focus {
+  color: #7a0715;
+  background: #f22840;
 }

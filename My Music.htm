@@ -4,8 +4,12 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="./css/jquery.flipster.min.css">
+    <link rel="stylesheet" href="./css/jquery.flipster.css">
+    <link rel="stylesheet" href="./css/demo.css">
     <link rel="stylesheet" href="./css/music.css">
-      
+
      </head>
     <body>
     <div class="color">
@@ -92,9 +96,94 @@
            
         </div>
     </div>
-        <div class="gallery1">
+         <div class="gallery1">
+                <article id="demo-carousel" class="demo">
+                    <div class="galaudio" align="center" >
+                        <audio  id="audioe" autoplay controls></audio>
+                    </div>
 
-        </div>
+                <div id="carousel">
+                        <ul class="flip-items">
+                            <li >
+                                <img class="galsong" src="./image/msc_1.jpg" id="1" abbr title="01 Deewani Mastani -  Bajirao Mastani (Shreya Ghoshal)" data-track="Track : track1" data-artist="Artist : Shreya Ghoshal" data-Gener="Gener : Bollywood" data-size="Size : 13.1 MB" data-length="Length : 5:40" data-rate="5" >
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_2.jpg" id="2" abbr title="03 - Zingaat (Akhil Tapori Mix) - DJ Akhil Talreja (SongsMp3.Com)" data-track="Track : track2" data-artist="Artist : Akhil Talreja" data-Gener="Gener : Songs.Mp3.Co" data-size="Size : 3.75 MB" data-length="Length : 3:26" data-rate="4">
+                             </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_3.jpg" id="3" abbr title="03 Khalibali - Padmaavat" data-track="Track : track3" data-artist="Artist : Shivam Phatak" data-Gener="Gener : Bollywood" data-size="Size : 10 MB" data-length="Length : 4:19" data-rate="5">
+                            </li>
+                            <li >
+                                <img class="galsong"  src="./image/msc_4.jpg" id="4" abbr title="03 Malhari (Bajirao Mastani)" data-track="Track : track4" data-artist="Artist : Vishal Dadlani" data-Gener="Gener : Bollywood" data-size="Size : 8.53 MB" data-length="Length : 4:04" data-rate="3">
+                            </li>
+                            <li >
+                                <img class="galsong"  src="./image/msc_5.jpg" id="5" abbr title="ABCD_(Bestwap.in)" data-track="Track : track5" data-artist="Artist : yo yo honey singh" data-Gener="Gener : Bollywood" data-size="Size : 3.25 MB" data-length="Length : 3:27" data-rate="5">
+                            </li>
+                            <li >
+                                <img class="galsong"  src="./image/msc_6.jpg" id="6" abbr title="Cabello_ft_Young_Thug_-_Havana (1)" data-track="Track : track6" data-artist="Artist : Camila Cabello" data-Gener="Gener : Rock" data-size="Size : 2.28 MB" data-length="Length : 3:38" data-rate="4">
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_7.jpg" id="7" abbr title="Champion - Dwayne DJ Bravo" data-track="Track : track7" data-artist="Artist : Dwyane" data-Gener="Gener : Rock" data-size="Size : 5.82 MB" data-length="Length : 2:29" data-rate="3">
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_8.jpg" id="8" abbr title="Cheap Thrills (feat. Sean Paul) (Mp3Beet.Com) - 320Kbps" data-track="Track : track8" data-artist="Artist : Sia Furler" data-Gener="Gener : Rock" data-size="Size : 8.98 MB" data-length="Length : 3:44" data-rate="5">
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_9.jpg" id="9" abbr title="Demi-Lovato-Clean-Bandit-Solo"  data-track="Track : track9" data-artist="Artist : Clean_bandit" data-Gener="Gener : Rock" data-size="Size : 5.10 MB" data-length="Length : 3:42" data-rate="4">
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_a.jpg" id="a" abbr title="Ed Sheeran - Shape of You - MP3 320"  data-track="Track : track10" data-artist="Artist : Ed Sheeran" data-Gener="Gener :Rock" data-size="Size : 9.07 MB" data-length="Length : 3:53" data-rate="5">
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_b.jpg" id="b" abbr title="Jau De Na Va(VipMarathi.Com)" data-track="Track : track11" data-artist="Artist : Jayas Kumar" data-Gener="Gener : old days" data-size="Size : 4.69 MB" data-length="Length : 5:02" data-rate="4" >
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_c.jpg" id="c" abbr title="Right Now (Na Na Na) - Akon(MyMp3Song)"  data-track="Track : track12" data-artist="Artist : Akon" data-Gener="Gener : Rock" data-size="Size : 3.76 MB" data-length="Length : 4:06" data-rate="3">
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_d.jpg" id="d" abbr title="Smack That - Akon(MyMp3Song)"  data-track="Track : track13" data-artist="Artist : Akon" data-Gener="Gener : Rock" data-size="Size : 3.85 MB" data-length="Length : 4:12 " data-rate="2">
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_e.jpg" id="e" abbr title="Sukhakarta Dukhaharta Ganesh Aarti - Anuradha Paudwal"  data-track="Track : track14" data-artist="Artist : Anuradha Paudwal" data-Gener="Gener : Bhajan" data-size="Size : 2.47 MB" data-length="Length : 2:28" data-rate="3">
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_f.jpg" id="f" abbr title="I wanna love you - Akon"  data-track="Track : track15" data-artist="Akon" data-Gener="Gener : Rock " data-size="Size : 5.02 MB" data-length="Length : 4:23" data-rate="4">
+                            </li>
+                            <li >
+                                <img class="galsong" src="./image/msc_g.jpg" id="g" abbr title="02 Sun Saathiya - ABCD 2" data-track="Track : track16" data-artist="Artist : Divya Kumar" data-Gener="Gener : Rock" data-size="Size : 8.44 MB" data-length="Length : 3:37" data-rate="2">
+                            </li>
+
+
+                            
+                        </ul>
+                    </div>
+                    <div class="gdetails">
+                        
+                        <div class="gimage">
+                            <img id="galim">
+                        </div>
+
+                        <div class="gdetail">
+                                <p id="track1"></p>
+                                <p id="artist1"></p>
+                                <p id="gener1"></p>
+                                <p id="size1"></p>
+                                <p id="length1"></p>
+                                <div id="Ratings"><p>Rating :</p></div>        
+                                <div id="staree">
+                                  <img id="110" class="stard">
+                                  <img id="111" class="stard">
+                                  <img id="112" class="stard">
+                                  <img id="113" class="stard">
+                                  <img id="114" class="stard">
+                                  </div>
+
+                        </div>
+                    </div>
+                    </article>
+                
+               
+        </div> 
         <div class="list1">
             <div class="liste">
                 <audio id="song" src="" controls autoplay></audio>
@@ -394,6 +483,19 @@
         </div>
         </div>
         <script src="./js/jquery.js"></script>
+        <script src="./js/jquery.min.js"></script>
         <script src="./js/music2.js"></script>
+        
+        <script src="./js/jquery.flipster.min.js"></script>
+        <script src="./js/jquery.flipster.js"></script>
+        <script>
+                var carousel = $("#carousel").flipster({
+                    style: 'carousel',
+                    spacing: -0.5,
+                    nav: true,
+                    buttons:   true,
+                });
+        </script>
+
     </body>
 </html>

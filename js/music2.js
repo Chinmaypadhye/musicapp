@@ -16,6 +16,8 @@ $(document).ready(() => {
         $(".grid-2").css("display","none");
         $(".gallery1,.details").css("display","none");
         $(".list1").css("display","block");
+        $("#audioe").get(0).pause();
+        
         function alterclass(){
             var wwww = document.body.clientWidth;
             
@@ -47,22 +49,51 @@ $(document).ready(() => {
   $(".video-display").css("display","block");
   $(".grid-2,.music-player").css("display","block");
   $("#grid1").css("display","block");
-  $("#gallery1,.list1").css("display","none");
+  $("#gallery1,.list1,.gallery1").css("display","none");
   $(".grid").addClass("active");
   $("#List").removeClass("active");
   $(".gallery").removeClass("active");
-  
-  })
+  $("#audioe").get(0).pause();
+  stopp();
+})
 
     $(".gallery").click(function(){
         $(".video-display").css("display","none");
         $(".grid-2,.music-player,.list1").css("display","none");
         $("#grid1").css("display","none");
-        $("#gallery1").css("display","block");
+        $("#gallery1,.gallery1,.gdetails").css("display","block");
         $(".gallery").addClass("active");
         $(".grid").removeClass("active");
         $("#List").removeClass("active");
         $(".details").css("display","none");
+        stopp();
+    })
+    $(".galsong").click(function(){
+        $(".stard").attr("src","");
+        var myid=`./music/music_${this.id}.mp3`;
+        $("#audioe").attr("src",myid);
+        var gimggg= `./image/msc_${this.id}.jpg`;
+        $(".gimage").css("display","block");
+        $("#galim").attr("src",gimggg);
+        var iddd= `#${this.id}`;
+           $("#track1").html($(iddd).attr("data-track"));
+           $("#artist1").html($(iddd).attr("data-artist"));
+           $("#gener1").html($(iddd).attr("data-gener"));
+           $("#size1").html($(iddd).attr("data-size"));
+           $("#length1").html($(iddd).attr("data-Length"));
+           $("#staree").css("display","block");
+           $(".gdetail").css("display","block");
+           $("#Ratings").css("display","block");
+           var rate= $(iddd).data("rate");
+           console.log(rate);
+           var i;
+           for(i=0;i<rate;i++){
+               var t= `#11${i}`;
+               console.log(t)
+               $(t).attr("src","./image/star.png");
+               console.log($(t).attr("src"))
+           }
+
     })
     $(".audioo").click( ()=>{
         stopped();
@@ -100,6 +131,7 @@ $(document).ready(() => {
            var o= `./videos/video_${this.id}.mp4`;
            var z= `./music/music_${this.id}.mp3`;
            $("#audd").attr("src",z);
+           
            
            $("#videoes").attr("src",o);
            var f= `#${this.id}`;
@@ -195,21 +227,5 @@ $(".sung").click(function(){
         $(c).text("stop");
         $("#song").get(0).play();
     }
-  
-
-
-    // if (d=="play"){
-    //     $(c).text("");
-    //     $(c).text("Stop");
-        
-        
-
-    // }else{
-    //     d=$(c).text("Play");
-    //     $("#song").get(0).pause();
-        
-    // }
-    
-
 })
 })
