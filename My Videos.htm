@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/jquery.flipster.min.css">
+  <link rel="stylesheet" href="./css/jquery.flipster.css">
+  <link rel="stylesheet" href="./css/demo.css">
   <link rel="stylesheet" href="./css/music.css">
+
 
  </head>
  <body>
@@ -58,7 +62,7 @@
     </div>
     <div class="grid-2">
      
-      <div class="row">
+      <div class="row grw">
        <div class="col-sm-3 colmn"><img src="./image/vid_1.jpg" class="imges bor" abbr title="Alan Walker - Diamond Heart (feat. Sophia Somajo)_Full-HD" id="1" data-track="Track : track 1" data-Artist="Artist : Alan Walker" data-Gener="Gener : Rock" data-size="size : 29.2 mb" data-Length= "Length : 3.38" data-rate="4"></div>
        <div class="col-sm-3 colmn"><img src="./image/vid_2.jpg" class="imges bor" abbr title="Axwell Λ Ingrosso - I Love You ft. Kid Ink_Full-HD" id="2"  data-track="Track : track 1" data-Artist="Artist : Axwell Λ Ingrosso" data-Gener="Gener : Rock" data-size="size : 23 mb" data-Length= "Length : 3.20" data-rate="5"></div>
        <div class="col-sm-3 colmn"><img src="./image/vid_3.jpg" class="imges bor" abbr title="Believer (Imagine Dragons) Full HD(HDJumbo.Com)" id="3"  data-track="Track : track 1" data-Artist="Artist : Believer" data-Gener="Gener : Rock" data-size="size : 68.6 mb" data-Length= "Length : 3.36" data-rate="3"></div>
@@ -77,6 +81,61 @@
      
     </div>
     <div id="gallery1">
+        <article  class="demo">
+            
+        <div id="carousel">
+                <ul class="flip-items">
+                    <li >
+                        <video class="galvid" width="400" height="300" controls src="./videos/video_1.mp4"  poster="./image/vid_1.jpg"  abbr title="Alan Walker - Diamond Heart (feat. Sophia Somajo)_Full-HD"  data-track="Track : track 1" data-Artist="Artist : Alan Walker" data-Gener="Gener : Rock" data-size="size : 29.2 mb" data-Length= "Length : 3.38" data-rate="4"></video>
+                    </li>
+                    <li>
+                        <video class="galvid" width="400" height="300" controls src="./videos/video_2.mp4"   poster="./image/vid_2.jpg"  abbr title="Camila Cabello - Crying in the Club_Full-HD"   data-track="Track : track 1" data-Artist="Artist : Camila Cabello" data-Gener="Gener : Rock" data-size="size : 36.2 mb" data-Length= "Length : 5.20" data-rate="2"></video>
+                    </li>
+                    <li>
+                        <video class="galvid"  width="400" height="300" controls src="./videos/video_3.mp4"  poster="./image/vid_3.jpg"  abbr title="Believer (Imagine Dragons) Full HD(HDJumbo.Com)"   data-track="Track : track 1" data-Artist="Artist : Believer" data-Gener="Gener : Rock" data-size="size : 68.6 mb" data-Length= "Length : 3.36" data-rate="3"></video>
+                    </li>
+                    <li>
+                        <video class="galvid"  width="400" height="300" controls src="./videos/video_4.mp4"  poster="./image/vid_4.jpg"  abbr title="Bombay Rockers - Rock Tha Party HQ.mp4"   data-track="Track : track 1" data-Artist="Artist : Bombay Rockers" data-Gener="Gener : Rock" data-size="size : 15.2 mb" data-Length= "Length : 3.33" data-rate="4"></video>
+                    </li>
+                    <li id="selected">
+                        <video class="galvid"  width="400" height="300" controls src="./videos/video_5.mp4"  poster="./image/vid_5.jpg"  abbr title="Bryan Adams - Cloud Number 9_HIGH"  data-track="Track : track 1" data-Artist="Artist : Bryan Adams" data-Gener="Gener : Rock" data-size="size : 14.6 mb" data-Length= "Length : 4.10" data-rate="5"></video>
+                    </li>
+                    <li>
+                        <video class="galvid"  width="400" height="300" controls src="./videos/video_6.mp4"  poster="./image/vid_6.jpg" abbr title="Camila Cabello - Crying in the Club_Full-HD"   data-track="Track : track 1" data-Artist="Artist : Camila Cabello" data-Gener="Gener : Rock" data-size="size : 36.2 mb" data-Length= "Length : 5.20" data-rate="2"></video>
+                    </li>
+                    <li >
+                        <video class="galvid"  width="400" height="300" controls src="./videos/video_7.mp4"  poster="./image/vid_7.jpg" abbr title="Cartoon - On & On (Official Music Video)_HD"   data-track="Track : track 1" data-Artist="Artist : Cartoon" data-Gener="Gener : Rock" data-size="size : 32 mb" data-Length= "Length : 3.26" data-rate="4"></video>
+                    </li>
+                    <li >
+                        <video class="galvid"  width="400" height="300" controls src="./videos/video_8.mp4"  poster="./image/vid_8.jpg"  abbr title="Clean Bandit - Rockabye ft. Sean Paul & Anne-Marie [Official Video]"   data-track="Track : track 1" data-Artist="Artist : Clean Bandit" data-Gener="Gener : Rock" data-size="size : 36.1 mb" data-Length= "Length : 4.13" data-rate="5"></video>
+                    </li>
+                    <li >
+                        <video class="galvid"  width="400" height="300" controls src="./videos/video_9.mp4"  poster="./image/vid_9.jpg"  abbr title="Coldplay - Hymn For The Weekend (Official Video)_Full-HD"   data-track="Track : track 1" data-Artist="Artist : Coldplay" data-Gener="Gener : Rock" data-size="size : 53.3 mb" data-Length= "Length : 4.20" data-rate="3"></video>
+                    </li>
+                   
+
+                    
+                </ul>
+            </div>
+            <div class="gdetails2">
+                <div class="gdetail2">
+                        <p class="gdet" id="track2"></p>
+                        <p class="gdet" id="artist2"></p>
+                        <p class="gdet" id="gener2"></p>
+                        <p class="gdet" id="size2"></p>
+                        <p class="gdet" id="length2"></p>
+                        <div id="Ratingss"><p class="gdet">Rating :</p></div>        
+                        <div id="staree2">
+                          <img id="1110" class="stard">
+                          <img id="1111" class="stard">
+                          <img id="1112" class="stard">
+                          <img id="1113" class="stard">
+                          <img id="1114" class="stard">
+                          </div>
+
+                </div>
+            </div>
+            </article>
 
     </div>
     <footer id="footer">
@@ -110,5 +169,15 @@
 </div>
 <script src="./js/jquery.js"></script>
 <script src="./js/music2.js"></script>
+<script src="./js/jquery.flipster.min.js"></script>
+        <script src="./js/jquery.flipster.js"></script>
+        <script>
+                var carousel = $("#carousel").flipster({
+                    style: 'carousel',
+                    spacing: -0.5,
+                    nav: true,
+                    buttons:   true,
+                });
+        </script>
 </body>
 </html>

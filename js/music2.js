@@ -1,5 +1,6 @@
 $(document).ready(() => {
- 
+    var ide1;
+    var ide2;
     function stopped(){
         
         $("#audd").get(0).pause();
@@ -49,7 +50,7 @@ $(document).ready(() => {
   $(".video-display").css("display","block");
   $(".grid-2,.music-player").css("display","block");
   $("#grid1").css("display","block");
-  $("#gallery1,.list1,.gallery1").css("display","none");
+  $("#gallery1,.list1,.gallery1,.gdetails2").css("display","none");
   $(".grid").addClass("active");
   $("#List").removeClass("active");
   $(".gallery").removeClass("active");
@@ -58,16 +59,108 @@ $(document).ready(() => {
 })
 
     $(".gallery").click(function(){
+        $(".stard").attr("src","");
         $(".video-display").css("display","none");
+        
         $(".grid-2,.music-player,.list1").css("display","none");
         $("#grid1").css("display","none");
-        $("#gallery1,.gallery1,.gdetails").css("display","block");
+        $("#gallery1,.gallery1,.gdetails,.gdetails2").css("display","block");
         $(".gallery").addClass("active");
         $(".grid").removeClass("active");
         $("#List").removeClass("active");
         $(".details").css("display","none");
-        stopp();
-    })
+        $("#track2").html($(".flipster__item--current").children().find("video").attr("data-track"));
+        $("#artist2").html($(".flipster__item--current").children().find("video").attr("data-artist"));
+        $("#gener2").html($(".flipster__item--current").children().find("video").attr("data-gener"));
+        $("#size2").html($(".flipster__item--current").children().find("video").attr("data-size"));
+        $("#length2").html($(".flipster__item--current").children().find("video").attr("data-length"))
+        rate= $(".flipster__item--current").children().find("video").attr("data-rate");
+         var i;
+           for(i=0;i<rate;i++){
+               var t= `#111${i}`;
+               
+               $(t).attr("src","./image/star.png");
+               
+           }
+
+        
+})
+$(".audioo").click(function(){
+    stopp();
+})
+    let videodetails1;
+    let videodetails2;
+    let videodetails3;
+    let videodetails4;
+    let videodetails5;
+
+    let selectedVideo=null;
+    $(".galvid").click(function(){
+    
+    $(".stard").attr("src","");;    
+    videodetails1= $(this).attr("data-track");
+    videodetails2= $(this).attr("data-artist");
+    videodetails3= $(this).attr("data-gener");
+    videodetails4= $(this).attr("data-size");
+    videodetails5= $(this).attr("data-length");
+    var rate= $(this).attr("data-rate");
+    $("#track2").html(videodetails1);
+    $("#artist2").html(videodetails2);
+    $("#gener2").html(videodetails3);
+    $("#size2").html(videodetails4);
+    $("#length2").html(videodetails5);
+    console.log(selectedVideo)
+    var i;
+           for(i=0;i<rate;i++){
+               var t= `#111${i}`;
+               
+               $(t).attr("src","./image/star.png");
+               
+           }
+    
+    
+    if(!selectedVideo){
+        selectedVideo=this;
+        
+    }
+    else {
+        $(selectedVideo).get(0).pause();
+        selectedVideo.load();
+        selectedVideo=this;
+    }
+ })
+ $(".flipster__button").click(function(){
+    $(".stard").attr("src","");
+   
+    $("#track2").html($(".flipster__item--current").children().find("video").attr("data-track"));
+    $("#artist2").html($(".flipster__item--current").children().find("video").attr("data-artist"));
+    $("#gener2").html($(".flipster__item--current").children().find("video").attr("data-gener"));
+    $("#size2").html($(".flipster__item--current").children().find("video").attr("data-size"));
+    $("#length2").html($(".flipster__item--current").children().find("video").attr("data-length"))
+    var rate= $(".flipster__item--current").children().find("video").attr("data-rate");
+    var i;
+      for(i=0;i<rate;i++){
+          var t= `#111${i}`;
+          
+          $(t).attr("src","./image/star.png");
+          
+      }
+
+
+    if(selectedVideo){
+        $(selectedVideo).get(0).pause();
+        selectedVideo.load();
+
+    }
+    
+})
+
+    
+
+
+   
+
+    
     $(".galsong").click(function(){
         $(".stard").attr("src","");
         var myid=`./music/music_${this.id}.mp3`;
@@ -85,13 +178,13 @@ $(document).ready(() => {
            $(".gdetail").css("display","block");
            $("#Ratings").css("display","block");
            var rate= $(iddd).data("rate");
-           console.log(rate);
+           
            var i;
            for(i=0;i<rate;i++){
                var t= `#11${i}`;
-               console.log(t)
+               
                $(t).attr("src","./image/star.png");
-               console.log($(t).attr("src"))
+               
            }
 
     })
