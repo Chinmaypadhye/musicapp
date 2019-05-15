@@ -334,6 +334,8 @@
 
 .popup{
   width:210px;
+  order: 2;
+  margin-left: auto;
 }
 
 .pop img{
@@ -689,7 +691,7 @@
   }
 
 .video-display{
-  width: 300px;
+  width: 250px;
   height: 200px;
 }
 
@@ -800,6 +802,7 @@
 .stard{
   height: 15px;
 }
+
 }
 @media only screen and (max-width: 376px){
   .modal{
@@ -812,6 +815,9 @@
     bottom: 594px;
     right: -12px;
   }
+
+  
+  
 }
 
 @media only screen and (max-width: 361px){

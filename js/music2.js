@@ -109,7 +109,7 @@ $(".audioo").click(function(){
     $("#gener2").html(videodetails3);
     $("#size2").html(videodetails4);
     $("#length2").html(videodetails5);
-    console.log(selectedVideo)
+    
     var i;
            for(i=0;i<rate;i++){
                var t= `#111${i}`;
@@ -121,13 +121,14 @@ $(".audioo").click(function(){
     
     if(!selectedVideo){
         selectedVideo=this;
-        
+        console.log(selectedVideo);
     }
     else {
         $(selectedVideo).get(0).pause();
         selectedVideo.load();
         selectedVideo=this;
-    }
+        $(selectedVideo).get(0).play();
+        }
  })
  $(".flipster__button").click(function(){
     $(".stard").attr("src","");
@@ -277,6 +278,16 @@ $(".audioo").click(function(){
     myFunction(x);
    })
 
+   function mFunction(y){
+       if (y.matches){
+           if (y.matches){
+               $("#videoes").attr("width","250px");
+           }
+        }
+   };
+  var y= window.matchMedia('(max-width: 321px)');
+  mFunction(y);
+  y.addListener(mFunction);
    let state=null;
    let prev;
 $(".sung").click(function(){
